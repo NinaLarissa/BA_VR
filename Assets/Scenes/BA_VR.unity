@@ -123,6 +123,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 191156ab3641062499f6ec23e01bc058, type: 2}
+--- !u!1 &5352940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5352941}
+  m_Layer: 0
+  m_Name: Link
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5352941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5352940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.301, y: 0.931, z: 3.162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 26336521}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &26336521
 Transform:
   m_ObjectHideFlags: 0
@@ -136,6 +166,8 @@ Transform:
   m_Children:
   - {fileID: 1823803288}
   - {fileID: 1521566214}
+  - {fileID: 5352941}
+  - {fileID: 2067770548}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 138.517, z: 0}
@@ -151,13 +183,31 @@ GameObject:
   - component: {fileID: 27579067}
   - component: {fileID: 28521255}
   - component: {fileID: 32866173}
+  - component: {fileID: 26545628}
   m_Layer: 0
   m_Name: Cabin1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!191 &26545628
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26545627}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 5352941}
+  m_End: {fileID: 2067770548}
+  m_CostOverride: -1
+  m_BiDirectional: 1
+  m_Activated: 1
+  m_AutoUpdatePositions: 0
 --- !u!33 &27579067
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4013,8 +4063,8 @@ GameObject:
   m_Name: lo_Prop_SmallTable_B_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &985339501
 Transform:
@@ -4403,7 +4453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5f8f24837de84428a77bcc93c595fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cc: {fileID: 1074399163}
+  cc: {fileID: 0}
 --- !u!82 &1074399166
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4413,7 +4463,7 @@ AudioSource:
   m_GameObject: {fileID: 1074399156}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
   m_audioClip: {fileID: 8300000, guid: 81bc8b81f7e40ce47b7b91257e842bd9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.834
@@ -6309,7 +6359,7 @@ GameObject:
   m_Name: SceneSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 1
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &1823803285
@@ -7386,6 +7436,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1817118561797353044, guid: 18f560bf927c0244da98a9f436cdd915, type: 3}
   m_PrefabInstance: {fileID: 866809409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2067770547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067770548}
+  m_Layer: 0
+  m_Name: Link
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067770548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067770547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.291, y: 0.967, z: 1.256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 26336521}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091433057
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,8 +7482,8 @@ GameObject:
   m_Name: lo_Prop_SmallTable_B_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 16
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 24
   m_IsActive: 1
 --- !u!4 &2091433058
 Transform:

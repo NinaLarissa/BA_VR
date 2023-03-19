@@ -14,7 +14,7 @@ public class Footsteps : MonoBehaviour
     // Playing Footsteps-Sound only when CC is moving
     void Update()
     {
-        if (cc.isGrounded == true && cc.velocity.magnitude > 0.1f && GetComponent<AudioSource>().isPlaying == false)
+        if (cc.isGrounded == true && cc.velocity.magnitude > 0.8 && GetComponent<AudioSource>().isPlaying == false)
         {
             GetComponent<AudioSource>().volume = Random.Range(0.8f, 1);
             GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.1f);
