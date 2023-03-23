@@ -1611,7 +1611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef75562a94e1524289780af22116d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 30
+  enemyHealth: 20
   isEnemyDead: 0
 --- !u!195 &4036352045667959441
 NavMeshAgent:
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   canAttack: 1
   chaseDistance: 2
   turnSpeed: 5
-  damageAmount: 15
+  damageAmount: 5
   attackTime: 2
   source: {fileID: 2928874853563651068}
   growlingSound: {fileID: 8300000, guid: 50e5f8f838bafd244875dc7ee4f118e8, type: 3}

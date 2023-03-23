@@ -947,7 +947,7 @@ MonoBehaviour:
   canAttack: 1
   chaseDistance: 2
   turnSpeed: 5
-  damageAmount: 15
+  damageAmount: 5
   attackTime: 2
   source: {fileID: 2984978283800543369}
   growlingSound: {fileID: 8300000, guid: f5d36771a81579d48b57d92f31082296, type: 3}
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef75562a94e1524289780af22116d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 30
+  enemyHealth: 20
   isEnemyDead: 0
 --- !u!82 &2984978283800543369
 AudioSource:
