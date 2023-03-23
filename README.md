@@ -3,7 +3,7 @@ VR Version of Game
 
 This is the VR Version of my project. It's a Zombie horrorgame. :-) The purpose is to validate my thesis, that a VR game is more immersive - therefore more frightening and stressful - than a normal FPS game.
 
-#Assets I used:
+# Assets I used:
 Ghoul-zombie - Dmitriy Dryzhak
 AllSky Free - 10 Sky / Skybox Set - rpgwhitelock
 Mini First Person Controller - Simon Pasi
